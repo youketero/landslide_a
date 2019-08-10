@@ -2,129 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb054275-0b96-4d4d-8de8-c7dbdaa79755" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/css/autocomplete.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/css/base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/css/changelists.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/css/dashboard.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/css/fonts.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/css/forms.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/css/responsive.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/css/responsive_rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/css/rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/css/vendor/select2/LICENSE-SELECT2.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/css/vendor/select2/select2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/css/vendor/select2/select2.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/css/widgets.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/fonts/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/fonts/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/fonts/Roboto-Bold-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/fonts/Roboto-Light-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/fonts/Roboto-Regular-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/img/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/img/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/img/calendar-icons.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/img/gis/move_vertex_off.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/img/gis/move_vertex_on.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/img/icon-addlink.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/img/icon-alert.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/img/icon-calendar.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/img/icon-changelink.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/img/icon-clock.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/img/icon-deletelink.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/img/icon-no.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/img/icon-unknown-alt.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/img/icon-unknown.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/img/icon-viewlink.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/img/icon-yes.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/img/inline-delete.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/img/search.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/img/selector-icons.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/img/sorting-icons.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/img/tooltag-add.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/img/tooltag-arrowright.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/SelectBox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/SelectFilter2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/actions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/actions.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/admin/DateTimeShortcuts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/admin/RelatedObjectLookups.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/autocomplete.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/calendar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/cancel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/change_form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/collapse.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/collapse.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/core.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/inlines.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/inlines.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/jquery.init.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/popup_response.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/prepopulate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/prepopulate.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/prepopulate_init.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/timeparse.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/urlify.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/jquery/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/jquery/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/jquery/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/select2/LICENSE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/select2/i18n/ar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/select2/i18n/az.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/select2/i18n/bg.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/select2/i18n/ca.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/select2/i18n/cs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/select2/i18n/da.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/select2/i18n/de.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/select2/i18n/el.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/select2/i18n/en.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/select2/i18n/es.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/select2/i18n/et.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/select2/i18n/eu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/select2/i18n/fa.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/select2/i18n/fi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/select2/i18n/fr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/select2/i18n/gl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/select2/i18n/he.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/select2/i18n/hi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/select2/i18n/hr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/select2/i18n/hu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/select2/i18n/id.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/select2/i18n/is.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/select2/i18n/it.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/select2/i18n/ja.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/select2/i18n/km.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/select2/i18n/ko.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/select2/i18n/lt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/select2/i18n/lv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/select2/i18n/mk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/select2/i18n/ms.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/select2/i18n/nb.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/select2/i18n/nl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/select2/i18n/pl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/select2/i18n/pt-BR.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/select2/i18n/pt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/select2/i18n/ro.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/select2/i18n/ru.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/select2/i18n/sk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/select2/i18n/sr-Cyrl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/select2/i18n/sr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/select2/i18n/sv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/select2/i18n/th.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/select2/i18n/tr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/select2/i18n/uk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/select2/i18n/vi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/select2/i18n/zh-CN.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/select2/i18n/zh-TW.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/select2/select2.full.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/select2/select2.full.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/xregexp/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/xregexp/xregexp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/landslide_a/admin/js/vendor/xregexp/xregexp.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/landslide/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/landslide/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landslide_a/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/landslide_a/static/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landslide_a/templates/first.html" beforeDir="false" afterPath="$PROJECT_DIR$/landslide_a/templates/first.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -141,8 +19,8 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/landslide/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="255">
+              <caret line="27" column="69" selection-start-line="27" selection-start-column="69" selection-end-line="27" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -192,7 +70,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="width" value="1377" />
     <option name="height" value="768" />
@@ -302,18 +180,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1377" height="768" extended-state="1" />
+    <frame x="-8" y="0" width="1377" height="768" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5091603" side_tool="true" weight="0.3289689" />
-      <window_info anchor="bottom" id="manage.py@landslide" order="13" visible="true" weight="0.32857144" />
+      <window_info active="true" anchor="bottom" id="manage.py@landslide" order="13" visible="true" weight="0.32857144" />
       <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Python Console" order="8" sideWeight="0.49389312" weight="0.33387887" />
       <window_info anchor="bottom" x="5" y="294" width="1310" height="216" id="Run" order="2" sideWeight="0.4908397" weight="0.33015874" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32857144" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8175355" visible="true" weight="0.21943812" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8175355" visible="true" weight="0.21943812" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.32977098" />
       <window_info anchor="right" id="SciView" order="4" />
@@ -542,8 +420,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/landslide/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="255">
+          <caret line="27" column="69" selection-start-line="27" selection-start-column="69" selection-end-line="27" selection-end-column="69" />
         </state>
       </provider>
     </entry>
