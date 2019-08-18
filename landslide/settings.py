@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'y$1u(4=s(0njie1*a8ff0pou!u*4rpg1q^hmeck$l@%$*4^qe_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
 
 ALLOWED_HOSTS = ['https://arcane-tor-39424.herokuapp.com/','127.0.0.1']
 
@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'landslide_a'
+    'landslide_a',
 ]
 
 MIDDLEWARE = [
@@ -123,3 +123,6 @@ USE_TZ = True
 STATIC_URL = '/landslide_a/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # The URL to use when referring to static files (where they will be served from)
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR)
+

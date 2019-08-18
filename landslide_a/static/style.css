@@ -1,7 +1,13 @@
+h1 h2 h3 h4 h5 h6 {
+    font-family: "Work Sans", Arial, sans-serif;
+}
 
+.dropdown-menu{
+    width: 230px;
+}
 section {
   width: 100%;
-  height: 60vh;
+  height: 90vh;
   box-sizing: border-box;
 }
 section.sec1 {
@@ -36,12 +42,14 @@ section.sec1 {
 @media screen and (max-width : 980px) {
     .nd{
         text-align: right;}
-    .dropdown .dropdown-menu{background-color: #f8f9fa;
+    .dropdown .dropdown-menu{
         border: none;
+        width: auto;
+        align-content: right;
     }
 
-    section div{
-        font-size: 1em;
+    .sec1  {
+        font-size: 14px;
         padding-top: 5px;
     }
 }
@@ -67,41 +75,37 @@ section.sec1 {
 .sec1 div p{
     padding-top:  10px;
     color: white;
+    font-size: 20px;
 }
 .text {
     color: #b3b3b3;
     font-weight: 500;
-
+    line-height: 1.5em;
+    font-family: roboto,sans-serif;
 }
-
 .hr_short{
-    width: 60px;
-    height: 2px;
-    background-color: #377dff;
-    margin-bottom: 10px;
+    border-bottom: 2px solid #377dff;
+    padding-bottom: 20px;
+    width: 40%;
 }
 .mybutton{
-    width: 150px;
+    width: 200px;
     height: 50px;
-    border: 3px solid #377dff;
+    border: 2px solid #377dff;
     color: #377dff;
+    border-radius: .5rem;
     padding: 5px 10px 10px 10px;
     background-color: white;
     font-weight: 600;
-   box-shadow: 4px 4px 2px 1px rgba(0, 0, 255, .2);
+    transition: 0.3s;
 }
 .mybutton:hover{
     color: white;
     background-color: #377dff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
 }
-article{
-    background-color: #e9ecef;
-}
-i{
-    color: #377dff;
-}
-.about{
-    background-color: #f2f2f2;
+.body-bg{
+    background-color: #f3f3f3;
 }
 
 .li-dec{
@@ -111,9 +115,21 @@ i{
 .li-dec:hover{
     color: #377dff;
 }
-footer i{
+.icon i{
     color: #b3b3b3;
+    transition: 0.3s;
 }
-footer i:hover{
+.icon i:hover{
     color: #377dff;
 }
+.hover-card{
+    color:#b3b3b3;
+    transition: 0.3s;
+}
+.hover-card:hover{
+    border: 1px solid #377dff;
+    color: #377dff;
+}
+
+
+
