@@ -1,0 +1,48 @@
+{% extends "aside.html" %}
+
+{% load staticfiles %}
+
+{% block title %}
+    Blog
+{% endblock %}
+{% block aside %}
+     <div class=" col-lg-7 col-md-8 col-sm-12 col-12 ">
+    {% for article in contacts %}
+                          <div class="card hover-card shadow mb-4">
+                              <a href={% url  "article" article.title %} ><img src="{{ article.image.url }} " class="card-img-top" width="100%" height="auto"></a>
+                              <div class="card-body">
+                                  <h4 class="card-title pt-4 p-2 "><a href="{% url "article" article.title %}">{{ article.title }}</a></h4>
+                                <p class="card-text text p-2">{{ article.short_text|safe }}</p>
+                                <div class="d-flex flex-row p-2">
+                                    <a href = "{% url  "article" article.title %}" class="mr-auto">Continue reading <i class="fas fa-arrow-right align-middle"></i></a>
+                                    <p class="card-text"><small class="text-muted"><i class="far fa-calendar-alt pr-1"></i>{{ article.date|date:"d-m-Y" }}</small></p>
+                                </div>
+                              </div>
+                          </div>
+    {% endfor %}
+     <nav >
+  <ul class="pagination justify-content-center">
+      {% if contacts.has_previous %}
+        <li class="page-item ">
+            <a href="?page=1" class="page-link" tabindex="-1">&laquo; first</a>
+        </li>
+        <li class="page-item ">
+         <a href="?page={{ contacts.previous_page_number }}" class="page-link" tabindex="-1" >{{  contacts.previous_page_number }}</a>
+        </li>
+      {% endif %}
+       <li class="page-item active" aria-current="page">
+          <a class="page-link" href="#">{{ contacts.number }}<span class="sr-only">(current)</span></a>
+       </li>
+       {% if contacts.has_next %}
+           <li class="page-item " aria-current="page">
+              <a href="?page={{ contacts.next_page_number }}" class="page-link">{{ contacts.next_page_number }}</a>
+           </li>
+           <li class="page-item " aria-current="page">
+               <a href="?page={{ contacts.paginator.num_pages }}" class="page-link">last &raquo;</a>
+           </li>
+       {% endif %}
+
+  </ul>
+</nav>
+     </div>
+{% endblock %}

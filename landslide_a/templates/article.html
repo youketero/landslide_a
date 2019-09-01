@@ -1,39 +1,26 @@
-{% extends "base.html" %}
+{% extends "aside.html" %}
+
 {% load staticfiles %}
 
 {% block title %}
     {{ article.title }}
 {% endblock %}
 
-{% block content %}
-    <div class="pt-3 container-fluid pb-4">
-        <div class="row no-gutters offset-lg-1">
-            <div class=" p-4 col-lg-7 col-md-7 col-sm-12 col-12 bg-white shadow">
+{% block aside %}
+            <div class=" p-1 px-sm-1 col-lg-7 col-md-7 col-sm-12 col-12 bg-white shadow">
                   <img src="{{ article.image.url }} " class="card-img-top" width="100%" height="auto">
-                <div class="card-body icon">
+                <div class="card-body">
                     <div class="d-flex flex-row icon" >
                         <a href="#"><i class=" fab fa-telegram-plane pr-4 " ></i></a>
                         <a href="#" class="mr-auto"> <i class=" fab fa-twitter pr-4  "></i></a>
                         <p class="card-text text"><i class="far fa-calendar-alt pr-1"></i>{{ article.date|date:"d-m-Y" }}</p>
                     </div>
-                    <h4 class="card-title pt-4">{{ article.title }}</h4>
+                    <h4 class="card-title pt-4 my-sm-2">{{ article.title }}</h4>
                 </div>
                 <div class="card-body text text-justify">
                         {{ article.text|linebreaks}}
                   </div>
              </div>
-            <div class="mx-lg-4 my-sm-4 my-4 my-lg-0 my-md-4 p-4 col-lg-4 col-md-4 col-sm-12 col-12 bg-white shadow">
-                <div class="text-justify p-3">
-                    <h2 class="text-center">Recent news</h2>
-                    <ul class="list-unstyled py-4">
-                        {% for article in articles %}
-                            <li>{{ article.title }}</li>
-                            <hr>
-                        {% endfor %}
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
 {% endblock %}
+
+
