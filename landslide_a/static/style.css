@@ -1,6 +1,7 @@
 h1 h2 h3 h4 h5 h6 {
     font-family: "Work Sans", Arial, sans-serif;
 }
+
 .dropdown-menu{
     width: 230px;
 }
@@ -43,7 +44,7 @@ section.sec2{
     text-decoration: none;
     color: #377dff;
 }
-@media screen and (max-width : 980px) {
+@media screen and (max-width : 950px) {
     .nd{
         text-align: right;}
     .dropdown .dropdown-menu{
@@ -69,7 +70,7 @@ section.sec2{
     border-top: 2px solid  #e9ecef;;
     border-radius: 0;
     color: lightskyblue;
-    margin-top: 14px;
+    margin-top: 9px;
     transition: 0.3s;
 }
 .sec1 div p{
@@ -79,10 +80,12 @@ section.sec2{
 }
 .text {
     color: #b3b3b3;
-    font-weight: 500;
+    font-weight: 300;
     line-height: 1.5em;
-    font-family: roboto,sans-serif;
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
 }
+
 .hr_short{
     border-bottom: 2px solid #377dff;
     padding-bottom: 20px;
@@ -181,4 +184,12 @@ button>a:hover{
 .scrollup:hover{
     color: #377dff;
     border: 1px solid #377dff;
+}
+.togler-pass{
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border-radius: .25rem;
+    border: none;
 }

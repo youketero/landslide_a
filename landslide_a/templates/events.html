@@ -1,0 +1,24 @@
+{% extends "aside.html" %}
+{% load staticfiles %}
+{% block title %}
+    Events
+{% endblock %}
+{% block aside %}
+
+    <div class=" col-lg-7 col-md-8 col-sm-12 col-12 ">
+     
+    {% for event in event1 %}
+
+       <div class="card hover-card shadow mb-4">
+           <div class="card-body ">
+               <h4 class="card-title pt-4 p-2 "><a href="{% url "detail" event.title %}">{{ event.title }}</a></h4>
+               <h5 class="card-title p-2">Location: {{ event.location }}</h5>
+               <div class="d-flex">
+                   <span class="card-text  p-2 mr-auto"><i class="far fa-clock pr-2"></i> {{ event.time|time:'H:i'}}</span>
+                   <span class="card-text  p-2"> <i class="far fa-calendar-alt  pr-2"></i> {{ event.date|date:"d-m-Y" }}</span>
+               </div>
+           </div>
+       </div>
+{% endfor %}
+    </div>
+{% endblock %}

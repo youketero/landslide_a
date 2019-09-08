@@ -1,27 +1,27 @@
 {% extends "base.html" %}
 {% load staticfiles %}
 {% block content %}
-    <div class="pt-3 container-fluid pb-4">
+    <div class="pt-5 container-fluid pb-4">
         <div class="row no-gutters offset-lg-1">
           {% block aside %}
 
           {% endblock %}
-            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                <div class="text-justify p-3 col-12 mx-lg-4 my-sm-2 my-sm-2 mx-sm-2 my-4 my-lg-0 bg-white ">
+            <div class=" ml-lg-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                <div class="text-justify p-4 col-12 mx-lg-4  my-4 my-lg-0 bg-white ">
                     <h2 class="text-center">Recent news</h2>
                     <ul class="list-unstyled py-4">
-                        {% for i in articles%}
+                        {% for i in articles %}
                             <li><a class="n" href="{% url 'article' i.title %}">{{ i.title }}</a></li>
                             <hr>
                         {% endfor %}
                     </ul>
                 </div>
             <div class=" mt-4">
-            <div class="text-justify p-3 col-12 mx-lg-4 my-sm-2 my-4 my-lg-0 my-md-4 mx-sm-2 bg-white ">
+            <div class="text-justify p-4 col-12 mx-lg-4 my-4 my-lg-0 my-md-4  bg-white ">
                     <h2 class="text-center">Future events</h2>
                     <ul class="list-unstyled py-4">
-                        {% for i in articles%}
-                            <li><a class="n" href="{% url 'article' i.title %}">{{ i.title }}</a></li>
+                        {% for event in events_1%}
+                            <li><a class = "n" href="{% url "detail" event.title %}">{{ event.title }}</a></li>
                             <hr>
                         {% endfor %}
                     </ul>

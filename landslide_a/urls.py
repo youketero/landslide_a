@@ -6,10 +6,16 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     url(r'^$', landslide_a.views.first, name="first"),
-    url(r'^article/(?P<article_title>\D+)/$',landslide_a.views.article,name = "article"),
-    url(r'about_project/$',landslide_a.views.about,name="about"),
+    url(r'^article/(?P<article_title>.*)/$',landslide_a.views.article,name = "article"),
+    url(r'^about_project/$',landslide_a.views.about,name="about"),
     url(r'^news/$',landslide_a.views.news,name="news"),
-    url(r'^output/(?P<output_title>\D+)/$',landslide_a.views.output,name="output"),
-    url(r'^contact/$',landslide_a.views.contact,name="contact")
+    url(r'^output/(?P<output_title>.*)/$',landslide_a.views.output,name="output"),
+    url(r'^contact/$',landslide_a.views.contact,name="contact"),
+    url(r'^partners/$',landslide_a.views.partners,name="partners"),
+    url(r'^partners/(?P<partners_title>.*)/$',landslide_a.views.partners_detail, name="partners_detail"),
+    url(r'^team/$',landslide_a.views.team, name="our team"),
+    url(r'^event/$',landslide_a.views.events, name="event"),
+    url(r'^event/(?P<event_title>.*)/$',landslide_a.views.specialevent, name="detail"),
+    url(r'^sitemap/$',landslide_a.views.sitemap,name="sitemap")
 
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

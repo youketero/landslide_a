@@ -18,15 +18,14 @@
 
 </script>
 <h1 class="d-none">projectlandslide</h1>
-    <nav  class="navbar navbar-expand-lg text navbar-light ">
-        <div class="d-flex flex-grow-1">
-            <a class="navbar-brand d-lg-inline-block" href="{% url "first" %}">
-                <img src='{% static "logo_main.png" %}' class="w-100">
+    <nav  class="navbar navbar-expand-lg text navbar-light">
+        <div class="d-flex w-100">
+            <a class="navbar-brand d-lg-inline-block  mr-auto" href="{% url "first" %}">
+                <img src='{% static "logo_main.png" %}' class="w-50">
             </a>
-            <div class="w-100 text-right pt-2">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <div class="text-right pt-2">
+                <button class="togler-pass d-sm-block d-lg-none" type="button" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="navbar-toggler-icon"></span></button>
             </div>
         </div>
         <div class="collapse navbar-collapse  text-right" id="myNavbar">
@@ -40,8 +39,8 @@
             </a>
             <div class="dropdown-menu justify-content-end" aria-labelledby="navbarDropdownMenuLink">
               <a class="nd" href="{% url "about" %}">About project</a>
-              <a class="nd" href="#">About partners</a>
-              <a class="nd" href="#">Our team</a>
+              <a class="nd" href="{% url "partners" %}">About partners</a>
+              <a class="nd" href="{% url "our team" %}">Our team</a>
             </div>
           </li>
                 <li class=" dropdown">
@@ -58,7 +57,7 @@
                     <a href="{% url "news" %}" class="n m-2 menu-item">Blog</a>
                 </li>
                 <li class="nav-item  ">
-                    <a href="#" class=" n  m-2 menu-item">Events</a>
+                    <a href="{% url "event" %}" class=" n  m-2 menu-item">Events</a>
                 </li>
                 <li class="nav-item  ">
                     <a href="{% url "contact" %}" class=" n  m-2 menu-item">Contacts</a>
@@ -67,7 +66,7 @@
         </div>
     </nav >
     <button class="scrollup"><i class="fas fa-angle-up"></i></button>
-<div class="body-bg text-justify">
+<div class="body-bg text-justify ">
 {% block content %}
 
 {% endblock %}
@@ -88,9 +87,9 @@
         </div>
            <div class="d-flex flex-row justify-content-center pl-4" >
           <ul class="list-unstyled d-flex flex-row">
-            <li class="pr-3 text "><i class="fas fa-phone pr-2"></i> 308 000 12 01
+              <li class="pr-3 text "><a href="tel:+380882391975"><i class="fas fa-phone pr-2"></i></a> 308 000 12 01
 </li>
-            <li class="pr-3 text"> <i class="fas fa-envelope pr-2"></i> example.com</li>
+              <li class="pr-3 text"> <a href="mailto:projectlandslide@gmail.com"><i class="fas fa-envelope pr-2"></i></a> example.com</li>
           </ul>
     </div>
     <div class=" d-flex justify-content-center pl-2 pr-2 text" >
