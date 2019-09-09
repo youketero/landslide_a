@@ -35,6 +35,7 @@ class About(models.Model):
     icon = models.TextField(max_length=100)
     image_about = models.ImageField(upload_to="landslide_a/static/img",default="landslide_a/static/img/1502775784-80580920_cQVDkIC.jpg")
     short = models.TextField(default="enter please")
+    link_to_website = models.TextField(default="enter e-mail here", max_length=100)
     def __str__(self):
         return "%s"% (self.title)
 

@@ -15,8 +15,8 @@
                 <img src="{{ team.personal_image.url }} " class="card-img-top " width="100%" height="auto">
                     <div class="card-body  d-flex flex-row justify-content-center">
                         <h5 class="card-title mr-auto">{{ team.first_name }} {{ team.last_name }}</h5>
-                        <span><i class="fas fa-envelope pr-3"></i></span>
-                        <span> <i class="fab fa-facebook-f "></i></span>
+                        <a href="{{ team.email }}"><span>  <i class="fas fa-envelope pr-3"></i></span></a>
+                        <a href="{{ team.link_facebook }}"><span> <i class="fab fa-facebook-f "></i></span></a>
                     </div>
             </div>
         </div>
