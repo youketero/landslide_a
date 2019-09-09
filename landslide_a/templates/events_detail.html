@@ -8,17 +8,17 @@
                 <div class="card-body">
                     <h4 class="card-title pt-4 my-sm-2">{{ even.title }}</h4>
                     <h5 class=" pt-4">Details:</h5>
-                    <div class="d-flex flex-row icon pt-3" >
-                        <p class="card-text text mr-4"><i class="far fa-calendar-alt pr-1"></i> {{ even.date|date:"d-m-Y" }}</p>
-                        <p class="card-text text"><i class="far fa-clock pr-2"></i> {{ even.time|time:'H:i'}}</p>
+                    <div class="d-flex flex-row text1 icon pt-3" >
+                        <p class="card-text mr-4"><i class="far fa-calendar-alt pr-1"></i> {{ even.date|date:"d-m-Y" }}</p>
+                        <p class="card-text "><i class="far fa-clock pr-2"></i> {{ even.time|time:'H:i'}}</p>
                     </div>
-                     <div class="d-flex flex-column icon pt-2" >
-                        <p class="card-text text "><i class="fas fa-map-marker-alt mr-2"></i>{{ even.location }}</p>
-                        <p class="card-text text ">Type of event: {{ even.type_of_event }}</p>
+                     <div class="d-flex flex-column text1 icon pt-2" >
+                        <p class="card-text "><i class="fas fa-map-marker-alt mr-2"></i>{{ even.location }}</p>
+                        <p class="card-text ">Type of event: {{ even.type_of_event }}</p>
                     </div>
                 </div>
                 <h5 class="card-body py-2" >Short description</h5>
-                <div class="card-body text text-justify">
+                <div class="card-body text1 text-justify">
                         {{ even.main_text|linebreaks}}
                   </div>
              </div>
