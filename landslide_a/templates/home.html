@@ -44,7 +44,7 @@
                               <a href={% url  "article" article.title %} ><img src="{{ article.image.url }} " class="card-img-top" width="100%" height="auto"></a>
                               <div class="card-body">
                                   <h4 class="card-title pt-4 p-2 "><a href="{% url "article" article.title %}">{{ article.title|title }}</a></h4>
-                                <p class="card-text  p-2">{{ article.short_text|safe }}</p>
+                                <p class="card-text text1 p-2">{{ article.short_text|safe }}</p>
                                 <div class="d-flex flex-row p-2">
                                     <a href = "{% url  "article" article.title %}" class="mr-auto">Continue reading <i class="fas fa-arrow-right align-middle"></i></a>
                                     <p class="card-text"><small class="text-muted"><i class="far fa-calendar-alt pr-1"></i>{{ article.date|date:"d-m-Y" }}</small></p>
@@ -68,7 +68,7 @@
                             <div class="card-body d-flex flex-column">
                                 {{ item.icon|safe }}
                                 <h5 class="text-center py-3"><a href="{% url "partners_detail" item.title %}">{{ item.title }}</a></h5>
-                                <p class="text">{{ item.short }}</p>
+                                <p class="text1">{{ item.short }}</p>
                             </div>
                         </div>
                     </div>
