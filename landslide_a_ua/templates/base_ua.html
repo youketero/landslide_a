@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 {% load staticfiles %}
-<html lang="en">
+<html>
 <head>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script><script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -12,17 +12,15 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>{% block title %}{% endblock %}</title>
+    <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
-<script>
 
-</script>
-<h1 class="d-none">landslides-community</h1>
+<h1 class="d-none">landslides and communities</h1>
 
 <nav  class="navbar navbar-expand-lg text navbar-light">
         <div class="d-flex align-items-center px-lg-2">
-            <a class="navbar-brand d-lg-inline-block  mr-auto" href="{% url "first" %}">
+            <a class="navbar-brand d-lg-inline-block  mr-auto" href="{% url "first_ua" %}">
                 <img src='{% static "logo_main.png" %}' class="w-75">
             </a>
             <a class="navbar-brand d-lg-inline-block" href="https://www.city.ac.uk/"><img src="{% static "City-University-of-London-SQ-2400-pix_618e8ba65d35e2ffa1973ad23ed45aba.jpg" %}" width="75px" height="75px"></a>
@@ -36,31 +34,31 @@
         <div class="collapse navbar-collapse  text-right" id="myNavbar">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item ">
-                    <a href="{% url "first" %}" class=" n  m-2  menu-item">Home</a>
+                    <a href="{% url "first_ua" %}" class=" n  m-2  menu-item">Головна</a>
                 </li>
                 <li class="nav-item">
-                     <a class="n  m-2 menu-item" href="{% url "about" %}">About</a>
+                     <a class="n  m-2 menu-item" href="{% url "about_ua" %}">Про нас</a>
                 </li>
                 <li class="nav-item ">
-                   <a class="n m-2 menu-item" href="{% url "case_studies" %}">Case studies</a>
+                   <a class="n m-2 menu-item" href="{% url "case_studies_ua" %}">Об'єкти</a>
                 </li>
                 <li class="nav-item ">
-                    <a href="{% url "news" %}" class="n m-2 menu-item">News</a>
+                    <a href="{% url "news_ua" %}" class="n m-2 menu-item">Новини</a>
                 </li>
                 <li class="nav-item  ">
-                    <a href="{% url "event" %}" class=" n  m-2 menu-item">Events</a>
+                    <a href="{% url "event_ua" %}" class=" n  m-2 menu-item">Події</a>
                 </li>
                 <li class="nav-item  ">
-                     <a class="n  m-2 menu-item" href="{% url "our team" %}">Our team</a>
+                     <a class="n  m-2 menu-item" href="{% url "our team_ua" %}">Команда</a>
                 </li>
                 <li class="nav-item  ">
-                    <a href="{% url "contact" %}" class=" n  m-2 menu-item">Contacts</a>
+                    <a href="{% url "contact_ua" %}" class=" n  m-2 menu-item">Контакти</a>
                 </li>
             </ul>
             <div class="d-flex flex-row justify-content-end">
-                 <form action="{% url 'search' %}" class="form-inline md-form sm-form  pl-4 " method="get">
+                 <form action="{% url 'search_ua' %}" class="form-inline md-form sm-form  pl-4 " method="get">
                      <div class="d-flex flex-row align-items-center">
-                        <input class="form-control form-control-sm " id="search" name="q" type="text" placeholder="Search"
+                        <input class="form-control form-control-sm " id="search" name="q" type="text" placeholder="Пошук"
                                aria-label="Search">
                          <i class="fas fa-search pl-3" ></i>
                      </div>
@@ -70,12 +68,12 @@
 </nav >
 
 <div class="lang-ua">
-    <a href="{% url "first_ua" %}"><img src="{% static "Ukraine.png" %}" class="w-100"></a>
+    <a href="#"><img src="{% static "Ukraine.png" %}" class="w-100"></a>
 </div>
 <div class="lang-uk">
      <a href="{% url "first" %}"> <img src="{% static "United-Kingdom.png" %}" class="w-100"></a>
 </div>
-<button class="scrollup"><i class="fas fa-angle-up"></i></button>
+<button class="scrollup">  <i class="fas fa-angle-up"></i></button>
 <div class="body-bg text-justify ">
 {% block content %}
 
@@ -85,8 +83,8 @@
        <div class="d-flex flex-sm-column flex-md-column flex-lg-row flex-column justify-content-between">
        <div class="d-flex flex-row justify-content-center pl-4" >
           <ul class="list-unstyled d-flex flex-row">
-            <li class="pr-3 text"><a class="li-dec"  href="{% url "about" %}">about</a></li>
-            <li class="pr-3 text"><a class="li-dec" href="{% url "contact" %}">contact</a></li>
+            <li class="pr-3 text"><a class="li-dec"  href="{% url "about_ua" %}">about</a></li>
+            <li class="pr-3 text"><a class="li-dec" href="{% url "contact_ua" %}">contact</a></li>
             <li class="pr-3 text"><a  class="li-dec"  href="#">support</a></li>
           </ul>
     </div>

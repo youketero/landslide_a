@@ -1,0 +1,20 @@
+{% extends "aside.html" %}
+
+{% load staticfiles %}
+
+{% block title %}
+    {{ article.title }}
+{% endblock %}
+
+{% block aside %}
+            <div class=" p-2 px-sm-1 col-lg-7 col-md-7 col-sm-12 col-12 bg-white shadow">
+                <div class="card-body">
+                    <h4 class="card-title pt-4 my-sm-2 text-left">{{ output_item.title }}</h4>
+                </div>
+                <div class="card-body text text-justify">
+                        {{ output_item.text|linebreaks}}
+                  </div>
+             </div>
+{% endblock %}
+
+

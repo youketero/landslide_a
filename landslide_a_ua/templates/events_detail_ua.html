@@ -1,0 +1,25 @@
+{% extends "aside_ua.html" %}
+{% load staticfiles %}
+{% block title %}
+    {{ even.title_ua }}
+{% endblock %}
+{% block aside %}
+     <div class=" col-lg-7 col-md-6 col-sm-12 col-12 bg-white ">
+                <div class="card-body">
+                    <h4 class="card-title pt-4 my-sm-2">{{ even.title_ua }}</h4>
+                    <h5 class=" pt-4">Деталі:</h5>
+                    <div class="d-flex flex-row text1 icon pt-3" >
+                        <p class="card-text mr-4"><i class="far fa-calendar-alt pr-1"></i> {{ even.date|date:"d-m-Y" }}</p>
+                        <p class="card-text "><i class="far fa-clock pr-2"></i> {{ even.time|time:'H:i'}}</p>
+                    </div>
+                     <div class="d-flex flex-column text1 icon pt-2" >
+                        <p class="card-text "><i class="fas fa-map-marker-alt mr-2"></i>{{ even.location }}</p>
+                        <p class="card-text ">Тип івенту: {{ even.type_of_event_ua }}</p>
+                    </div>
+                </div>
+                <h5 class="card-body py-2" >Опис події</h5>
+                <div class="card-body text1 text-justify">
+                        {{ even.main_text|linebreaks}}
+                  </div>
+             </div>
+{% endblock %}

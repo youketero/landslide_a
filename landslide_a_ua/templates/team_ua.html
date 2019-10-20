@@ -1,0 +1,26 @@
+{% extends "base_ua.html" %}
+{% load staticfiles %}
+{% block title %}
+        Команда
+{% endblock %}
+{% block content %}
+    <div class="pb-5 d-flex  flex-column text-center justify-content-center pt-5 ">
+            <h2 class="d-flex justify-content-center"><span class="hr_short">Our team</span></h2>
+        </div>
+  <div class="container">
+     <div class="row no-gutters">
+    {% for team in team_person %}
+        <div class="  px-2 col-lg-3 col-md-6 col-sm-12 col-12 py-3">
+            <div class=" card hover-card " >
+                <img src="{{ team.personal_image.url }} " class="card-img-top " width="100%" height="auto">
+                    <div class="card-body  d-flex flex-row justify-content-center">
+                        <h5 class="card-title mr-auto">{{ team.first_name_ua }} {{ team.last_name_ua }}</h5>
+                        <a href="{{ team.email }}"><span>  <i class="fas fa-envelope pr-3"></i></span></a>
+                        <a href="{{ team.link_facebook }}"><span> <i class="fab fa-facebook-f "></i></span></a>
+                    </div>
+            </div>
+        </div>
+    {% endfor %}
+     </div>
+  </div>
+{% endblock %}

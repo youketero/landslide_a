@@ -16,8 +16,10 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from django.urls import path, include
-
+from django.contrib.sitemaps.views import sitemap
+sitemaps = {}
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'^', include("landslide_a.urls"))
+    url(r'^', include("landslide_a.urls")),
+    url(r'^ua/',include("landslide_a_ua.urls"))
 ]
