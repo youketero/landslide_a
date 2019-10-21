@@ -9,13 +9,10 @@ urlpatterns = [
     url(r'^новини/(?P<article_title>.*)/$',landslide_a_ua.views.article_ua,name = "article_ua"),
     url(r'^про нас/$',landslide_a_ua.views.about_ua,name="about_ua"),
     url(r'^новини/$',landslide_a_ua.views.news_ua,name="news_ua"),
-    url(r'^output/(?P<output_title>.*)/$',landslide_a_ua.views.output_ua,name="output"),
     url(r'^контакти/$',landslide_a_ua.views.contact_ua,name="contact_ua"),
     url(r'^дослідження/$',landslide_a_ua.views.case_studies_ua,name="case_studies_ua"),
     url(r'^partners/(?P<partners_title>.*)/$',landslide_a_ua.views.partners_detail_ua, name="partners_detail_ua"),
     url(r'^команда/$',landslide_a_ua.views.team_ua, name="our team_ua"),
-    url(r'^події/$',landslide_a_ua.views.events_ua, name="event_ua"),
-    url(r'^події/(?P<event_title>.*)/$',landslide_a_ua.views.specialevent_ua, name="detail_ua"),
     url(r'^sitemap/$',landslide_a_ua.views.sitemap,name="sitemap"),
     url(r'^пошук/$', landslide_a_ua.views.search.as_view(), name="search_ua"),
 

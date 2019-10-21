@@ -1,6 +1,9 @@
 from django.db import models
 from django.db.models import Q
 # Create your models here.
+
+
+
 class main_block(models.Model):
     first_block_title=models.TextField(default="enter first block title here")
     first_block_text = models.TextField(default="enter first block text here")
@@ -48,13 +51,13 @@ class Articles(models.Model):
     def __str__(self):
         return "%s %s %s %s"% (self.date,self.title,self.title_ua,self.image)
     def short_text(self):
-        if len(self.text)>300:
-            return self.text[:300]+'...'
+        if len(self.text)>150:
+            return self.text[:150]+'...'
         else:
             return self.text
     def short_text_ua(self):
-        if len(self.text_ua)>300:
-            return self.text_ua[:300]+'...'
+        if len(self.text_ua)>150:
+            return self.text_ua[:150]+'...'
         else:
             return self.text_ua
 
@@ -77,34 +80,14 @@ class outputs(models.Model):
         return "%s"% (self.title)
 
 
-class EventManager(models.Manager):
-    use_for_related_fields = True
-
-    def search(self, query=None):
-        qs = self.get_queryset()
-        if query:
-            or_lookup = (Q(title__icontains=query) | Q(main_text__icontains=query))
-            qs = qs.filter(or_lookup)
-
-        return qs
-    def search_ua(self,query=None):
-        qs_ua = self.get_queryset()
-        if query:
-            or_lookup_ua = (Q(title_ua__icontains=query) | Q(main_text_ua__icontains=query))
-            qs_ua = qs_ua.filter(or_lookup_ua)
-
-        return qs_ua
-class event(models.Model):
-    objects = EventManager()
+class case_of_study(models.Model):
     title = models.TextField(max_length=100,default="Write your title here")
     main_text = models.TextField(max_length=10000,default="Write your text here")
     title_ua = models.TextField(max_length=100, default="Введіть заголовок")
     main_text_ua = models.TextField(max_length=10000, default="Введіть текст")
+    foto_object = models.ImageField(upload_to="landslide_a/static/img",default="landslide_a/static/img/1502775784-80580920_cQVDkIC.jpg")
     date = models.DateField()
-    time  = models.TimeField(auto_now=True)
     location = models.TextField(default="Write location heres")
-    type_of_event = models.TextField(default="Write type of your event")
-    type_of_event_ua = models.TextField(default="Введіть тип події")
 
 class person(models.Model):
     first_name = models.TextField(default="enter your name please")

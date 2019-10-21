@@ -178,20 +178,19 @@ button>a:hover{
     position: fixed;
     bottom: 30px;
     right: 20px;
-    font-size: 30px;
-    height: 50px;
-    width: 50px;
+    width: 45px;
+    height: 45px;
+    font-size: 25px;
     z-index: 1001;
     transition: all 0.3s;
-    background-color: white;
-    border: 1px solid white;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid rgba(0,0,0,0);
     cursor: pointer;
     color: #b3b3b3;
     display: none;
 }
 .scrollup:hover{
     color: #377dff;
-    border: 1px solid #377dff;
 }
 .togler-pass{
     padding: .25rem .75rem;

@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'landslide_a',
-    'landslide_a_ua'
+    'landslide_a_ua',
 ]
 
 MIDDLEWARE = [

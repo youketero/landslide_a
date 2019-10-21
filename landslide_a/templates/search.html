@@ -5,7 +5,6 @@
 {% block content %}
     <h4 class="p-4 mx-lg-3">Find results of search query: {{ q }}</h4>
     <h6 class="px-4 pb-2 mx-lg-3">Find results: {{ count_fin }}</h6>
-    {% if q %}
          {% if article %}
              <div class="row mx-lg-4 mx-2">
             {% for i in article %}
@@ -25,30 +24,6 @@
             {% endfor %}
          </div>
          {% endif %}
-          {% if events %}
-              <div class="row  mx-lg-4 mx-2">
-                  {% for event in events %}
-                      <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                          <div class="card hover-card shadow mb-4">
-                              <div class="card-body ">
-                                  <h4 class="card-title pt-4 p-2 "><a href="{% url "detail" event.title %}">{{ event.title }}</a></h4>
-                                  <h5 class="card-title p-2">Location: {{ event.location }}</h5>
-                                  <div class="d-flex">
-                                      <span class="card-text  p-2 mr-auto"><i class="far fa-clock pr-2"></i> {{ event.time|time:'H:i'}}</span>
-                                      <span class="card-text  p-2"> <i class="far fa-calendar-alt  pr-2"></i> {{ event.date|date:"d-m-Y" }}</span>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  {% endfor %}
-              </div>
-          {% endif %}
-    {% else %}
-         <div class="marg alert alert-danger " role="alert">
-             No results find
-         </div>
-    {% endif %}
-
 
 
 {% endblock %}

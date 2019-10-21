@@ -16,17 +16,6 @@
                         {% endfor %}
                     </ul>
                 </div>
-            <div class=" mt-4">
-            <div class="text-justify p-4 col-12 mx-lg-4 my-4 my-lg-0 my-md-4  bg-white ">
-                    <h2 class="text-center">Future events</h2>
-                    <ul class="list-unstyled py-4">
-                        {% for event in events_1%}
-                            <li><a class = "n" href="{% url "detail" event.title %}">{{ event.title }}</a></li>
-                            <hr>
-                        {% endfor %}
-                    </ul>
-                </div>
-            </div>
         </div>
     </div>
     </div>
