@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name = "description" content="This site about landslides in Ukraine">
 <meta name= "keywords" content="landslide, community, resilience, risk, project, TSNUK, Ukraine City, University of London">
-<title>landslide and community - {% block title %}{% endblock %}</title>
+<title>Landslide and community - {% block title %}{% endblock %}</title>
 </head>
 <body>
 <script>
@@ -41,7 +41,7 @@
                      <a class="n  m-2 menu-item" href="{% url "about" %}">About</a>
                 </li>
                 <li class="nav-item ">
-                   <a class="n m-2 menu-item" href="{% url "case_studies" %}">Case studies</a>
+                   <a class="n m-2 menu-item" href="{% url "case_study" %}">Case studies</a>
                 </li>
                 <li class="nav-item ">
                     <a href="{% url "news" %}" class="n m-2 menu-item">News</a>
@@ -56,8 +56,8 @@
             <div class="d-flex flex-row justify-content-end">
                  <form action="{% url 'search' %}" class="form-inline md-form sm-form  pl-4 " method="get">
                      <div class="d-flex flex-row align-items-center">
-                        <input class="form-control form-control-sm " id="search" name="q" type="text" placeholder="Search"
-                               aria-label="Search">
+                        <input class="form-control form-control-sm mt-sm-2 mt-2 mt-lg-0 mt-md-0" id="search" name="q" type="text" placeholder="Enter first word"
+                               aria-label="Enter first word">
                          <i class="fas fa-search pl-3" ></i>
                      </div>
                  </form>
@@ -92,10 +92,9 @@
             <a href="#" class=""> <i class="fab fa-facebook-f "></i></a>
         </div>
            <div class="d-flex flex-row justify-content-center pl-4" >
-          <ul class="list-unstyled d-flex flex-lg-row">
-              <li class="text pr-2"><a href="tel:+380882391975"><i class="fas fa-phone pr-1"></i></a> 308 000 12 01
-</li>
-              <li class="text"> <a href="mailto:landslideandcommunities@gmail.com"><i class="fas fa-envelope pr-1"></i></a> landslideandcommunities@gmail.com</li>
+          <ul class="list-unstyled d-flex flex-lg-row flex-md-row flex-sm-row flex-column ">
+              <li class="text pr-lg-2 pr-md-2 pr-sm-2 pl-5  mr-lg-0 mr-md-0 mr-sm-0 ml-4"><a href="tel:+380882391975"><i class="fas fa-phone pr-1"></i></a> 308 000 12 01</li>
+              <li class=" text mt-2 mt-sm-0 mt-md-0 mt-lg-0 mt-xl-0"> <a href="mailto:landslideandcommunities@gmail.com"><i class="fas fa-envelope pr-1"></i></a> landslideandcommunities@gmail.com</li>
           </ul>
     </div>
     <div class=" d-flex justify-content-center pl-2 pr-2 text" >
@@ -103,5 +102,9 @@
     </div>
 </div>
 </footer>
+
 </body>
 </html>
+
+
+

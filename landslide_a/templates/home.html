@@ -22,7 +22,7 @@
                 <h2 class="pb-3"><span >{{ block.second_block_title }}</span></h2>
                 <p class="text pt-4 text-justify"> {{ block.second_block_text }} </p>
                 <div class="py-4">
-                    <div class=" w-100 d-flex text-center justify-content-center"><button class="mybutton" ><a href="{% url "about" %}">show more</a></button></div>
+                    <div class=" w-100 d-flex text-center justify-content-center"><button class="mybutton" ><a href="{% url "about" %}">Show more</a></button></div>
                 </div>
             </div>
         </div>
@@ -35,7 +35,7 @@
                 <div class=" row no-gutters">
                     {% for item in about %}
                     <div class="p-4 col-lg-6 col-md-6 col-sm-12 col-12">
-                        <div class="card hover-card1 ">
+                        <div class="card hover-card ">
                             <div class="card-body d-flex flex-row">
                                 <div class="p-3 pt-3">{{ item.icon|safe }}</div>
                                 <div>
@@ -51,7 +51,7 @@
 <article class="pt-4 pb-4 ">
     <div class=" pt-5 p-2">
         <div class="pb-5 d-flex  flex-column text-center justify-content-center">
-            <h2 class="d-flex justify-content-center"><span class="hr_short">News</span></h2>
+            <h2 class="pt-3 d-flex  text-center justify-content-center">News</h2><div class="hr_short"></div>
         </div>
     <div class="container">
     <div class="row no-gutters ">

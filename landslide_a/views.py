@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from landslide_a.models import Articles, About, main_block, outputs,person
+from landslide_a.models import Articles, About, main_block, outputs,person, geological_objects,main_object,foto_news,geological_background
 from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
 from django.views import View
 
@@ -13,18 +13,20 @@ def first(request):
 
 
 def article(request, article_title):
-    article = get_object_or_404(Articles, title=article_title)
+    article = get_object_or_404(Articles, title = article_title)
+    foto = foto_news.objects.filter(type__title = article_title)
     articles = Articles.objects.order_by('id').reverse()[:8]
     return render(request, 'article.html', locals())
 
 
 def about(request):
+    team_person = person.objects.all()
     return render(request, "about.html", locals())
 
 
 def news(request):
     outputs_item = Articles.objects.order_by('id').reverse()
-    paginator = Paginator(outputs_item, 10)
+    paginator = Paginator(outputs_item, 5)
     page = request.GET.get('page')
     contacts = paginator.get_page(page)
     articles = Articles.objects.order_by('id').reverse()
@@ -38,6 +40,7 @@ def contact(request):
 
 def case_studies(request):
     partner = About.objects.all()[1:]
+    geol = geological_objects.objects.all()
     return render(request, "case_studies.html", locals())
 
 
@@ -48,6 +51,11 @@ def partners_detail(request, partners_title):
 def team(request):
     team_person = person.objects.all()
     return render(request,"team.html",locals())
+
+def team_detailed(request,team_id):
+    team = get_object_or_404(person, id = team_id)
+    return render(request,"team_detailed.html",locals())
+
 def events(request):
     articles = Articles.objects.order_by('id').reverse()[:8]
     return render(request,"events.html",locals())
@@ -77,3 +85,16 @@ class search(View):
         return render(request, "search.html",locals())
 
 
+def case_study(request):
+    main = main_object.objects.all()
+    return render(request,"case_stud.html",locals())
+
+def geological_object(request,type):
+    geol = geological_objects.objects.filter(type_id__type=type)
+    titl = main_object.objects.filter(type = type)
+    return render(request, "geological_objects.html",locals())
+
+def geological_backgrounds(request,type):
+    geol = geological_background.objects.filter(type_id__type=type)
+    titl = main_object.objects.filter(type = type)
+    return render(request, "geological_background.html",locals())

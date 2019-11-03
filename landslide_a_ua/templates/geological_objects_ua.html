@@ -1,7 +1,7 @@
-{% extends "base.html" %}
+{% extends "base_ua.html" %}
 {% load staticfiles %}
 {% block title %}
-    Case studies
+    {{ geol.values }}
 {% endblock %}
 {% block content %}
     <script>
@@ -19,17 +19,17 @@
         });
     });
     </script>
-    <h2 class="pt-3 d-flex  text-center justify-content-center">Kyiv</h2><div class="hr_short"></div>
+    <h2 class="pt-3 d-flex  text-center justify-content-center">{% for i in titl %}{{ i.type_ua }}</h2><div class="hr_short"></div>
     <div class="mx-lg- mx-2 py-5 row">
         <div class="col-lg-6 col-sm-12 my-sm-3 my-3 py-lg-0">
-            <h4 class="text-center">Main objects</h4>
+            <h4 class="text-center">Об'єкти</h4>
             <div id="accordion" class="myaccordion">
               <div class="card">
                   {% for ge in geol %}
                 <div class="card-header" id="headingOne">
                   <h2 class="mb-0">
                     <button class="d-flex align-items-center  btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne{{ ge.pk }}" aria-expanded="false" aria-controls="collapseOne">
-                     <i class="fa fa-plus pr-3"></i>  {{ ge.name }}
+                     <i class="fa fa-plus pr-3"></i>  {{ ge.name_ua }}
                     </button>
                   </h2>
                 </div>
@@ -41,8 +41,8 @@
                           <span> {{ ge.y_coord }}</span>
                       </div>
                       <div class="pt-2">
-                          <div>{{ ge.adress }}</div>
-                          <div class="pt-2">{{ ge.desciption }}</div>
+                          <div>{{ ge.adress_ua }}</div>
+                          <div class="pt-2">{{ ge.desciption_ua }}</div>
 
                       </div>
                   </div>
@@ -52,11 +52,16 @@
             </div>
         </div>
         <div class=" col-lg-6 col-12 px-0 mx-0">
+            {% if i.type == "Kyiv" %}
             <iframe src="https://www.google.com/maps/d/embed?mid=17VG4qJVDXndhWfZZPAsfN3fAwGYt8e4O&hl=ru" width="100%" height="600" frameborder="1" style="border:0" allowfullscreen=""></iframe>
+            {% endif %}
+            {% if i.type == "Karpaty" %}
+           <iframe src="https://www.google.com/maps/d/embed?mid=10g5HEeMr8dnCSsvQuRH2RgFo6tPkPTZt" width="640" height="480"></iframe>
+            {% endif %}
         </div>
     </div>
 
-
+{% endfor %}
 
 
 

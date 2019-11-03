@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block title %}
+{% endblock %}
+{% block content %}
+
+     <script>function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var hrefs =  document.getElementById("link1");
+  var imgText = document.getElementById("imgtext1");
+  var imgText2 = document.getElementById("imgtext2");
+  var first = document.getElementById("first");
+  var second = document.getElementById("second");
+  expandImg.src = imgs.src;
+  hrefs.href = expandImg.src;
+  imgText.innerHTML = first.innerHTML;
+  imgText2.innerHTML = second.innerHTML;
+  expandImg.parentElement.style.display = "block";
+     }
+</script>
+    <div><h2 class="pt-3 d-flex  text-center justify-content-center">{% for i in titl %}Geological background {{ i.type }}{% endfor %}</h2></div><div class="hr_short"></div>
+    <div class="container py-3">
+        <div class="col-lg-12 col-sm-12 col-md-12 col-12">
+            <div class="slider ">
+                 <div class="slides pb-2 bg-white">
+                 {% for i in geol %}
+                     <img src="{{ i.geol_image.url }}"  class="pr-5" height="300" onclick="myFunction(this);">
+                     <div class="d-none">
+                         <div id ="first">{{ i.name }}</div>
+                         <div id = "second">{{ i.description }}</div>
+                     </div>
+                     {% endfor %}
+                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container col-lg-10 pb-5 px-4">
+        <div class="d-flex flex-lg-row  flex-md-row flex-sm-column flex-column ">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 bg-white p-lg-4 p-md-4 py-2" >
+                <a id = "link1" target="_blank" href=""><img src="" id="expandedImg" style="width:100%"></a>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 bg-white p-4">
+                <div><h4 id="imgtext1"></h4></div>
+                <div id = "imgtext2" class="text1"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock %}

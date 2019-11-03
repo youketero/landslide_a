@@ -95,9 +95,13 @@ section.sec2{
 
 
 .hr_short{
-    border-bottom: 2px solid #377dff;
-    padding-bottom: 20px;
-    width: 40%;
+    position: relative;
+    display: block;
+    text-align: center;
+    width: 50px;
+    height: 3px;
+    margin: 10px auto;
+    background: #4582FF;
 }
 .mybutton{
     width: 200px;
@@ -132,9 +136,10 @@ section.sec2{
 .icon i:hover{
     color: #377dff;
 }
+
 .hover-card{
     color:#b3b3b3;
-    transition: 0.3s;
+    transition: 0.6s;
 }
 .hover-card:hover{
     border: 1px solid #377dff;
@@ -200,12 +205,7 @@ button>a:hover{
     border-radius: .25rem;
     border: none;
 }
-.pb{
-    padding-bottom: 90px;
-}
-.marg{
-    margin-bottom: 500px;
-}
+
 
 .lang-ua{
     padding:2px;
@@ -229,12 +229,118 @@ button>a:hover{
     z-index: 10000;
 }
 
-.hover-card1{
-    color:#b3b3b3;
-    transition: 0.3s;
+/* Don't need button navigation */
+
+.slider {
+  width: auto;
+  height: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+
 }
-.hover-card1:hover{
-    border-left: 5px solid #377dff;
-    color: #377dff;
+
+.slides {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  /*
+  scroll-snap-points-x: repeat(300px);
+  scroll-snap-type: mandatory;
+  */
 }
+
+.slides > div {
+  scroll-snap-align: start;
+  width: 400px;
+  margin-right: 50px;
+  transition: transform 0.6s;
+  position: relative;
+    padding: 0;
+}
+
+
+/* Don't need button navigation */
+
+
+
+
+.myaccordion {
+  max-width: 500px;
+    height: 500px;
+  margin: 50px auto;
+  box-shadow: 0 0 1px rgba(0,0,0,0.1);
+    overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.myaccordion .card,
+.myaccordion .card:last-child .card-header {
+  border: none;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.myaccordion .card-header {
+  border-bottom-color: #EDEFF0;
+  background: transparent;
+}
+
+.myaccordion .fa-stack {
+  font-size: 18px;
+}
+
+.myaccordion .btn {
+  width: 100%;
+  font-weight: bold;
+  color: #b3b3b3;
+  padding: 5px 5px 5px 5px;
+}
+
+.myaccordion .btn:hover {
+  width: 100%;
+  font-weight: bold;
+  color: #377dff;
+
+}
+
+
+.myaccordion .btn-link:hover,
+.myaccordion .btn-link:focus {
+  text-decoration: none;
+}
+
+.myaccordion li + li {
+  margin-top: 10px;
+
+}
+
+.slides::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+    position: relative;
+}
+.slides::-webkit-scrollbar-thumb {
+  background: #377dff;
+  border-radius: 7px;
+}
+.myaccordion::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.myaccordion::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+    position: relative;
+}
+.myaccordion::-webkit-scrollbar-thumb {
+  background: #377dff;
+  border-radius: 7px;
+}
+.myaccordion::-webkit-scrollbar-track {
+  background: transparent;
+}
+
 

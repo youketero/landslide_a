@@ -2,8 +2,6 @@ from django.db import models
 from django.db.models import Q
 # Create your models here.
 
-
-
 class main_block(models.Model):
     first_block_title=models.TextField(default="enter first block title here")
     first_block_text = models.TextField(default="enter first block text here")
@@ -49,7 +47,7 @@ class Articles(models.Model):
         verbose_name_plural = 'Articles'
 
     def __str__(self):
-        return "%s %s %s %s"% (self.date,self.title,self.title_ua,self.image)
+        return "%s"% (self.title_ua)
     def short_text(self):
         if len(self.text)>150:
             return self.text[:150]+'...'
@@ -96,5 +94,50 @@ class person(models.Model):
     last_name_ua = models.TextField(default="Введіть прізвище")
     personal_image = models.ImageField(upload_to="landslide_a/static/img",default="landslide_a/static/img/1502775784-80580920_cQVDkIC.jpg")
     email = models.TextField(default="enter your e-mail")
-    link_facebook = models.TextField(default="enter link on your facebook page")
+    link_okid = models.TextField(default="enter link on your facebook page")
+    interests = models.TextField(default="Enter your interests here")
+    interests_ua = models.TextField(default="Enter your interests here")
+    cur_pos = models.TextField(default="Enter position")
+    cur_pos_ua = models.TextField(default="Enter position")
+    current_position = models.TextField(default="Enter current position here")
+    current_position_ua = models.TextField(default="Enter current position here")
 
+    def __str__(self):
+        return "%s%s"% (self.first_name,self.last_name)
+
+class foto_news(models.Model):
+    foto_header = models.TextField(default="Enter header of foto")
+    foto = models.ImageField(upload_to="landslide_a/static/img",default="landslide_a/static/img/1502775784-80580920_cQVDkIC.jpg")
+    type = models.ForeignKey(Articles,on_delete=models.CASCADE)
+
+class main_object(models.Model):
+    image = models.ImageField(upload_to="landslide_a/static/img",default="landslide_a/static/img/1502775784-80580920_cQVDkIC.jpg")
+    type = models.TextField(default="")
+    type_ua = models.TextField(default="")
+
+    def _get_FIELD_display(self, field):
+        return super()._get_FIELD_display(field)
+
+
+class geological_background(models.Model):
+    name = models.TextField(default="Enter header")
+    name_ua = models.TextField(default="Enter header")
+    description = models.TextField(default="Enter description of object")
+    description_ua = models.TextField(default="Enter description of object")
+    geol_image = models.ImageField(upload_to="landslide_a/static/img",default="landslide_a/static/img/1502775784-80580920_cQVDkIC.jpg")
+    type = models.ForeignKey(main_object,on_delete=models.CASCADE)
+    def __str__(self):
+        return "%s%s"% (self.name,self.type)
+
+class geological_objects(models.Model):
+    name = models.TextField(default="Enter name of object")
+    name_ua = models.TextField(default="Enter name of object")
+    x_coord = models.FloatField(default=2.3)
+    y_coord = models.FloatField(default=2.3)
+    adress = models.TextField(default="Enter adress here")
+    adress_ua = models.TextField(default="Enter adress here")
+    desciption = models.TextField(default="Enter  here")
+    desciption_ua = models.TextField(default="Enter  here")
+    type_id = models.ForeignKey(main_object,on_delete=models.CASCADE)
+    def __str__(self):
+        return "%s%s%s"% (self.name,self.x_coord,self.y_coord)

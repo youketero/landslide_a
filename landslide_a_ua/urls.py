@@ -13,7 +13,11 @@ urlpatterns = [
     url(r'^дослідження/$',landslide_a_ua.views.case_studies_ua,name="case_studies_ua"),
     url(r'^partners/(?P<partners_title>.*)/$',landslide_a_ua.views.partners_detail_ua, name="partners_detail_ua"),
     url(r'^команда/$',landslide_a_ua.views.team_ua, name="our team_ua"),
+    url(r'^team/(?P<team_id>.*)$', landslide_a_ua.views.team_detailed_ua, name="each_team_ua"),
     url(r'^sitemap/$',landslide_a_ua.views.sitemap,name="sitemap"),
     url(r'^пошук/$', landslide_a_ua.views.search.as_view(), name="search_ua"),
+    url(r'^Дослідженя/$', landslide_a_ua.views.case_study_ua, name="case_study_ua"),
+    url(r'^Геологічні_об`єкти/(?P<type>.*)/$', landslide_a_ua.views.geological_object_ua,name="geological_object_ua"),
+    url(r'^Геологічна_ситуація/(?P<type>.*)/$', landslide_a_ua.views.geological_backgrounds_ua,name="geological_background_ua")
 
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from landslide_a.models import Articles, About, main_block,person
+from landslide_a.models import Articles, About, main_block,person,main_object,geological_background,geological_objects,foto_news
 from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
 from django.views import View
 
@@ -14,6 +14,7 @@ def first_ua(request):
 
 def article_ua(request, article_title):
     article = get_object_or_404(Articles, title=article_title)
+    foto = foto_news.objects.filter(type__title=article_title)
     articles = Articles.objects.order_by('id').reverse()[:8]
     return render(request, 'article_ua.html', locals())
 
@@ -45,9 +46,16 @@ def partners_detail_ua(request, partners_title):
     articles = Articles.objects.order_by('id').reverse()[:8]
     partner_detailed = get_object_or_404(About, title=partners_title)
     return render(request, 'partners_detail_ua.html', locals())
+
 def team_ua(request):
     team_person = person.objects.all()
     return render(request,"team_ua.html",locals())
+
+
+def team_detailed_ua(request,team_id):
+    team = get_object_or_404(person, id = team_id)
+    return render(request,"team_detailed_ua.html",locals())
+
 def events_ua(request):
     articles = Articles.objects.order_by('id').reverse()[:8]
     return render(request,"events_ua.html",locals())
@@ -81,3 +89,16 @@ class search(View):
         return render(request, "search_ua.html",locals())
 
 
+def case_study_ua(request):
+    main = main_object.objects.all()
+    return render(request,"case_studies_ua.html",locals())
+
+def geological_object_ua(request,type):
+    geol = geological_objects.objects.filter(type_id__type_ua=type)
+    titl = main_object.objects.filter(type_ua = type)
+    return render(request, "geological_objects_ua.html",locals())
+
+def geological_backgrounds_ua(request,type):
+    geol = geological_background.objects.filter(type_id__type_ua=type)
+    titl = main_object.objects.filter(type_ua = type)
+    return render(request, "geological_background_ua.html",locals())
