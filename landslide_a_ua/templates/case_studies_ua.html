@@ -4,20 +4,20 @@
     Об'єкти досліджень
 {% endblock %}
 {% block content %}
-        <div class="py-4 d-flex  flex-column text-center justify-content-center  ">
+        <div class="py-5 d-flex  flex-column text-center justify-content-center  ">
             <h2 class="d-flex justify-content-center">Об'єкти досліджень</h2>
             <div class="hr_short"></div>
         </div>
        <div class="py-4  d-flex justify-content-around flex-lg-row flex-md-row flex-column">
             {% for i in main %}
-                <div class="col-lg-4 col-md-6 col-sm-12 col-12 p-4 px-4 px-lg-4 px-md-4">
-                    <div class="hover-card card p-lg-3 px-md-2 px-sm-2 p-2">
-                        <img src="{{ i.image.url }}" class="w-100" height="300" alt ="...">
-                         <h4 class="mt-2">{{ i.type_ua }}</h4>
-                        <div class="text1 my-3">
-                            <p><a href="{% url "geological_object_ua" i.type_ua %}" class="n">Геологічні об'єкти </a></p>
-                            <p><a href="{% url "geological_background_ua" i.type_ua %}" class="n mt-2">Геологічна ситуація</a></p>
-                        </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12 py-4">
+                    <div class="hover-card card ">
+                            <img src="{{ i.image.url }}" class="w-100" height="300" alt ="...">
+                             <h4 class="mt-2 px-3">{{ i.type_ua }}</h4>
+                            <div class="text1 my-3 px-3">
+                                <p><a href="{% url "geological_object_ua" i.type_ua %}" class="n">Геологічні об'єкти </a></p>
+                                <p><a href="{% url "geological_background_ua" i.type_ua %}" class="n mt-2">Геологічна ситуація</a></p>
+                            </div>
                     </div>
                 </div>
             {% endfor %}
