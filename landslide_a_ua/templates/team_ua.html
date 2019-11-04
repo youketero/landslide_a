@@ -15,7 +15,7 @@
     <div   class="slider pb-5">
       <div class="d-flex slides pb-3 px-2" id = "horizontal-scroller" >
         {% for team in team_person %}
-            <div class="card  hover-card col-sm-12 col-lg-3 col-12 col-md-4">
+            <div class="card  hover-card col-sm-6 col-lg-3 col-12 col-md-4">
                   <img src="{{ team.personal_image.url }}" class="card-img-top " width="100%" height="auto" alt="...">
                   <div class="card-body">
                         <h4 class="card-title mr-auto"><a href="{% url "each_team_ua" team.id %}">{{ team.current_position_ua }}</a></h4>

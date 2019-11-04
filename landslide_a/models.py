@@ -1,5 +1,6 @@
 from django.db import models
 from django.db.models import Q
+from django.forms import ModelForm
 # Create your models here.
 
 class main_block(models.Model):
@@ -141,3 +142,11 @@ class geological_objects(models.Model):
     type_id = models.ForeignKey(main_object,on_delete=models.CASCADE)
     def __str__(self):
         return "%s%s%s"% (self.name,self.x_coord,self.y_coord)
+
+
+class form_user1(models.Model):
+    name = models.TextField(default = None)
+    last_name = models.TextField(default= None)
+    mail = models.TextField(default=None)
+    phone =models.IntegerField(default=None)
+

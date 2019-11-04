@@ -1,5 +1,8 @@
 from django.shortcuts import render, get_object_or_404
-from landslide_a.models import Articles, About, main_block,person,main_object,geological_background,geological_objects,foto_news
+
+from landslide_a.forms import form_user
+from landslide_a.models import Articles, About, main_block, person, main_object, geological_background, \
+    geological_objects, foto_news, form_user1
 from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
 from django.views import View
 
@@ -34,7 +37,19 @@ def news_ua(request):
 
 
 def contact_ua(request):
-    return render(request, "contact_ua.html", locals())
+    if request.method == "POST":
+        form = form_user(request.POST)
+        if form.is_valid():
+            name = request.POST.get("name")
+            last_name = request.POST.get("last_name")
+            mail = request.POST.get("mail")
+            phone = request.POST.get("phone")
+            f = form_user1(name=name, last_name=last_name, mail=mail, phone=phone)
+            f.save()
+            return render(request, "contact.html", locals())
+    else:
+        form = form_user()
+        return render(request, "contact.html", locals())
 
 
 def case_studies_ua(request):

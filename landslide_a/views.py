@@ -1,5 +1,9 @@
+from django.http import HttpResponse
 from django.shortcuts import render, get_object_or_404
-from landslide_a.models import Articles, About, main_block, outputs,person, geological_objects,main_object,foto_news,geological_background
+
+from landslide_a.forms import form_user
+from landslide_a.models import Articles, About, main_block, outputs, person, geological_objects, main_object, foto_news, \
+    geological_background,form_user1
 from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
 from django.views import View
 
@@ -35,8 +39,19 @@ def news(request):
 
 
 def contact(request):
-    return render(request, "contact.html", locals())
-
+    if request.method == "POST":
+        form = form_user(request.POST)
+        if form.is_valid():
+            name = request.POST.get("name")
+            last_name = request.POST.get("last_name")
+            mail = request.POST.get("mail")
+            phone = request.POST.get("phone")
+            f = form_user1(name=name,last_name=last_name,mail=mail,phone=phone)
+            f.save()
+            return render(request, "contact.html", locals())
+    else:
+        form = form_user()
+        return render(request, "contact.html", locals())
 
 def case_studies(request):
     partner = About.objects.all()[1:]
