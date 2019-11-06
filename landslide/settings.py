@@ -25,7 +25,7 @@ SECRET_KEY = 'y$1u(4=s(0njie1*a8ff0pou!u*4rpg1q^hmeck$l@%$*4^qe_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
 
-ALLOWED_HOSTS = ['https://arcane-tor-39424.herokuapp.com/','127.0.0.1']
+ALLOWED_HOSTS = ['www.landslidesandcommunity.com']
 
 
 # Application definition

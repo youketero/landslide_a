@@ -11,7 +11,7 @@
              <div class="slider">
                 <div class="slides pb-2">
                     {% for i in foto %}
-                         <img src="{{ i.foto.url }}" class="card-img-top pr-4" width="100%" height="auto">
+                         <img src="{{ i.foto.url }}" class="card-img-top pr-4" id = "myimage">
                     {% endfor %}
                  </div>
 
@@ -22,7 +22,7 @@
                         <a href="#" class="mr-auto"> <i class=" fab fa-twitter pr-4  "></i></a>
                         <p class="card-text text"><i class="far fa-calendar-alt pr-1"></i>{{ article.date|date:"d-m-Y" }}</p>
                     </div>
-                    <h4 class="card-title pt-4 my-sm-2">{{ article.title_ua }}</h4>
+                    <h4 class="card-title pt-4 my-sm-2 text-left">{{ article.title_ua }}</h4>
                 </div>
                 <div class="card-body text1 text-justify">
                         {{ article.text_ua|linebreaks}}

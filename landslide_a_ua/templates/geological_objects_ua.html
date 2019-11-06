@@ -1,7 +1,7 @@
 {% extends "base_ua.html" %}
 {% load staticfiles %}
 {% block title %}
-    {{ geol.values }}
+    Геологічні об'єкти
 {% endblock %}
 {% block content %}
     <script>
@@ -35,7 +35,7 @@
                 </div>
                 <div id="collapseOne{{ ge.pk }}" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                   <div class="card-body pl-4 text1">
-                      <div class="d-flex align-items-center pt-2">
+                      <div class="d-flex align-items-center">
                           <i class="fas fa-map-marker-alt pr-3 n"></i>
                           <span class="pr-2">{{ ge.x_coord }}</span>
                           <span> {{ ge.y_coord }}</span>

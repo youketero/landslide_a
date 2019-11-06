@@ -60,7 +60,7 @@
                           <div class="card hover-card shadow">
                               <a href={% url  "article" article.title %} ><img src="{{ article.image.url }} " class="card-img-top" width="100%" height="auto"></a>
                               <div class="card-body">
-                                  <h4 class="card-title pt-4 p-2 "><a href="{% url "article" article.title %}">{{ article.title|title }}</a></h4>
+                                  <h4 class="card-title pt-4 p-2 text-left"><a href="{% url "article" article.title %}">{{ article.title|title }}</a></h4>
                                 <p class="card-text text1 p-2">{{ article.short_text|safe }}</p>
                                 <div class="d-flex flex-row p-2">
                                     <a href = "{% url  "article" article.title %}" class="mr-auto">Continue reading <i class="fas fa-arrow-right align-middle"></i></a>

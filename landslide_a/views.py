@@ -37,7 +37,6 @@ def news(request):
     article_all = articles[:5]
     return render(request, "news.html", locals())
 
-
 def contact(request):
     if request.method == "POST":
         form = form_user(request.POST)

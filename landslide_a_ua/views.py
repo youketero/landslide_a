@@ -44,12 +44,12 @@ def contact_ua(request):
             last_name = request.POST.get("last_name")
             mail = request.POST.get("mail")
             phone = request.POST.get("phone")
-            f = form_user1(name=name, last_name=last_name, mail=mail, phone=phone)
+            f = form_user1(name=name,last_name=last_name,mail=mail,phone=phone)
             f.save()
-            return render(request, "contact.html", locals())
+            return render(request, "contact_ua.html", locals())
     else:
         form = form_user()
-        return render(request, "contact.html", locals())
+        return render(request, "contact_ua.html", locals())
 
 
 def case_studies_ua(request):
