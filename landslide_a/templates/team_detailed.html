@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title%}{% endblock %}
+{% block title%}{{ team.first_name }} {{ team.last_name }}{% endblock %}
 {% block content %}
     <div class="container py-3">
         <div class="row bg-white my-5 py-3">
@@ -7,16 +7,18 @@
             <img src="{{ team.personal_image.url }}" class="w-100">
             </div>
             <div class="col-lg-8 col-md-6 col-sm-12 col-12  mt-sm-3 mt-3 mt-lg-0">
-                <h4 class="my-4">{{ team.current_position }}</h4>
+                <div class="d-flex flex-row  my-2">
+                       <h6>{{ team.first_name }}</h6>
+                       <h6 class=" px-3">  {{ team.last_name }}</h6>
+                </div>
                 <div class="d-flex flex-column">
                     <div class="d-flex flex-lg-row flex-column">
-                        <h6>Link oid</h6><p class="text1 px-lg-3">Current position:  {{ team.cur_pos }}</p>
+                        <h6 >{{ team.cur_pos }}</h6>
                     </div>
                     <div class="d-flex flex-lg-row flex-column">
-                        <h6>Name</h6> <p class="text1 px-lg-3">{{ team.first_name }}</p>
-                        <h6>Last name</h6><p class="text1 px-lg-3">  {{ team.last_name }}</p>
+                        <h6 class="my-3">{{ team.current_position }}</h6>
                     </div>
-                    <span class= "my-2">E-mail: <a href="{{ team.email }}" class="hover">{{ team.email }}</a></span>
+                    <span class= "my-2">E-mail: <a href="mailto:{{ team.email }}" class="hover">{{ team.email }}</a></span>
                     <span>Website <a href="{{ team.link_okid }}" class="hover">{{ team.link_okid }}</a></span>
                 </div>
             </div>
