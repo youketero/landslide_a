@@ -1,25 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bb054275-0b96-4d4d-8de8-c7dbdaa79755" name="Default" comment="build 1.1.2">
+    <list default="true" id="bb054275-0b96-4d4d-8de8-c7dbdaa79755" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landslide_a/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/landslide_a/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landslide_a/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/landslide_a/static/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landslide_a/templates/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/landslide_a/templates/article.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landslide_a/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/landslide_a/templates/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landslide_a/templates/geological_background.html" beforeDir="false" afterPath="$PROJECT_DIR$/landslide_a/templates/geological_background.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landslide_a/templates/geological_objects.html" beforeDir="false" afterPath="$PROJECT_DIR$/landslide_a/templates/geological_objects.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landslide_a/templates/team.html" beforeDir="false" afterPath="$PROJECT_DIR$/landslide_a/templates/team.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landslide_a/templates/team_detailed.html" beforeDir="false" afterPath="$PROJECT_DIR$/landslide_a/templates/team_detailed.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landslide_a/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/landslide_a/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landslide_a_ua/templates/base_ua.html" beforeDir="false" afterPath="$PROJECT_DIR$/landslide_a_ua/templates/base_ua.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landslide_a_ua/templates/contact_ua.html" beforeDir="false" afterPath="$PROJECT_DIR$/landslide_a_ua/templates/contact_ua.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landslide_a_ua/templates/geological_background_ua.html" beforeDir="false" afterPath="$PROJECT_DIR$/landslide_a_ua/templates/geological_background_ua.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landslide_a_ua/templates/geological_objects_ua.html" beforeDir="false" afterPath="$PROJECT_DIR$/landslide_a_ua/templates/geological_objects_ua.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landslide_a_ua/templates/team_detailed_ua.html" beforeDir="false" afterPath="$PROJECT_DIR$/landslide_a_ua/templates/team_detailed_ua.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landslide_a_ua/templates/team_ua.html" beforeDir="false" afterPath="$PROJECT_DIR$/landslide_a_ua/templates/team_ua.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landslide_a_ua/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/landslide_a_ua/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -53,7 +36,7 @@
         <entry file="file://$PROJECT_DIR$/landslide_a/templates/team.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -62,7 +45,7 @@
         <entry file="file://$PROJECT_DIR$/landslide_a_ua/templates/base_ua.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="18" column="109" lean-forward="true" selection-start-line="18" selection-start-column="109" selection-end-line="18" selection-end-column="109" />
+              <caret line="18" column="109" selection-start-line="18" selection-start-column="109" selection-end-line="18" selection-end-column="109" />
             </state>
           </provider>
         </entry>
@@ -98,7 +81,7 @@
         <entry file="file://$PROJECT_DIR$/landslide_a/static/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="181">
-              <caret line="238" lean-forward="true" selection-start-line="238" selection-end-line="238" />
+              <caret line="238" selection-start-line="238" selection-end-line="238" />
               <folding>
                 <element signature="e#18#70#0" />
                 <element signature="e#86#107#0" />
@@ -156,7 +139,7 @@
         <entry file="file://$PROJECT_DIR$/landslide_a/templates/geological_background.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="33" column="23" lean-forward="true" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+              <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -517,7 +500,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572872466948</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="build">
+      <created>1573070957836</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1573070957836</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TodoView">
@@ -531,7 +521,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32857144" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.3214826" side_tool="true" weight="0.32972136" />
@@ -539,9 +528,9 @@
       <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32857144" />
       <window_info anchor="bottom" id="Python Console" order="8" sideWeight="0.49319214" weight="0.33281735" />
-      <window_info anchor="bottom" x="5" y="294" width="1310" height="216" id="Run" order="2" sideWeight="0.6785174" visible="true" weight="0.32972136" />
+      <window_info active="true" anchor="bottom" x="5" y="294" width="1310" height="216" id="Run" order="2" sideWeight="0.6785174" visible="true" weight="0.32972136" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32698414" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8175355" visible="true" weight="0.24054463" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8175355" visible="true" weight="0.24054463" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.3290469" />
       <window_info anchor="right" id="SciView" order="4" weight="0.32980332" />
@@ -627,7 +616,8 @@
     <MESSAGE value="build 1.1.1" />
     <MESSAGE value="build 1.1." />
     <MESSAGE value="build 1.1.2" />
-    <option name="LAST_COMMIT_MESSAGE" value="build 1.1.2" />
+    <MESSAGE value="build" />
+    <option name="LAST_COMMIT_MESSAGE" value="build" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -902,7 +892,7 @@
     <entry file="file://$PROJECT_DIR$/landslide_a/templates/geological_background.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="33" column="23" lean-forward="true" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+          <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -923,7 +913,7 @@
     <entry file="file://$PROJECT_DIR$/landslide_a/static/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
-          <caret line="238" lean-forward="true" selection-start-line="238" selection-end-line="238" />
+          <caret line="238" selection-start-line="238" selection-end-line="238" />
           <folding>
             <element signature="e#18#70#0" />
             <element signature="e#86#107#0" />
@@ -970,14 +960,14 @@
     <entry file="file://$PROJECT_DIR$/landslide_a/templates/team.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/landslide_a_ua/templates/base_ua.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="18" column="109" lean-forward="true" selection-start-line="18" selection-start-column="109" selection-end-line="18" selection-end-column="109" />
+          <caret line="18" column="109" selection-start-line="18" selection-start-column="109" selection-end-line="18" selection-end-column="109" />
         </state>
       </provider>
     </entry>
